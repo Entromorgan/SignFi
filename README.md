@@ -18,18 +18,7 @@ This repository contains the following files.
 | sign_labels.csv | Labels for 276 sign words used in the measurement. | 2 KB |
 | README.md | Readme | 490 bytes |
 
-
-### Data Collection Summary
-The following table shows the data collection summary. Please check the paper for more details about experiment setup, measurement procedure, WiFi settings, etc.
-
-| Environment | User | Age | Weight/Height | Data Collection Date (Number of Signs × Number of Repetitions) | Gesture Duration | Number of Instances |
-| ----------- | ---- | --- | ------------- | -------------------------------------------------------------- | ---------------- | ------------------- |
-| Lab  | User 1 | 39 | 90kg/170cm | Oct. 18, 2017 (25×10); Nov. 2, 2017 (125×10) | 1s-2.5s | 1,500 |
-| Lab  | User 2 | 28 | 61kg/174cm | Oct. 18, 2017 (25×10); Oct. 30, 2017 (125×10) | 0.5s-1.5s | 1,500 |
-| Lab  | User 3 | 31 | 55kg/168cm | Oct. 21, 2017 (25×10); Nov. 6, 2017 (125×10) | 0.5s-1.5s | 1,500 |
-| Lab  | User 4 | 26 | 65kg/180cm | Oct. 23, 2017 (25×10); Oct. 31, 2017 (125×10) | 1s-2.5s | 1,500 |
-| Lab  | User 5 | 29 | 68kg/171cm | Jul. 18, 2017 (166×20); Jul. 19, 2017 (110×20) | 0.5s-1.5s | 5,520 |
-| Home | User 5 | 29 | 68kg/171cm | Jun. 8, 2017 (32×10); Jun. 25, 2017 (68×10); Jul. 4, 2017 (100×10); Jul. 11, 2017 (25×10); Jul. 12, 2017 (51×10) | 0.5s-1.5s | 2,760 |
+Please check the paper for more details about experiment setup, measurement procedure, WiFi settings, etc.
 
 
 ### An Example
