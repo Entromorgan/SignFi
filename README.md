@@ -11,7 +11,8 @@ This repository contains the following files.
 | ----- | ----------- | ---- |
 | videos/ | This folder contains the videos for 276 basic sign words. These videos are used for the participant to learn and perform sign gestures during data collection. | 105.9MB |
 |dataset_home_276.mat | Downlink and uplink CSI traces for 276 sign words in the home environment. There are 2,760 instances of 276 sign gestures performed by one user. | 1.37GB |
-|dataset_lab_276.mat | Downlink and uplink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 2.77GB |
+|dataset_lab_276_dl.mat | Downlink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 1.44GB |
+|dataset_lab_276_ul.mat | Uplink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 1.33GB |
 |dataset_lab_150.mat | Downlink CSI traces for 150 sign words in the lab environment. There are 7,500 instances of 150 sign gestures performed by five users. | 1.93GB |
 | signfi_cnn_example.m | MATLAB source code for training and testing using the dataset. | 3KB |
 | training_screen_shot.png | A screen shot of the training process | 541KB |
@@ -26,7 +27,7 @@ The following shows an example of running `[net_info, perf] = signfi_cnn_example
 
 1. Load the dataset and prepare for training.
 ```Matlab
-load('dataset_lab_276.mat');
+load('dataset_lab_276_dl.mat');
 tic;
 % prepare for training data
 csi_abs = abs(csi);
