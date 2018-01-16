@@ -34,6 +34,7 @@ The following table shows the data collection summary. Please check the paper fo
 
 ### An Example
 The following shows an example of running `[net_info, perf] = signfi_cnn_example(csi,label)`.
+
 1. Load the dataset and prepare for training.
 ```Matlab
 load('dataset_lab_276.mat');
