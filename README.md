@@ -8,7 +8,6 @@ This repository contains the following files.
 
 | Files | Description | Size |
 | ----- | ----------- | ---- |
-| videos/ | This folder contains the videos for 276 basic sign words. These videos are used for the participant to learn and perform sign gestures during data collection. | 105.9MB |
 | [dataset_home_276.mat](https://wm1693.box.com/s/mmikgi9ubkg7vnwaztplnxudh8sgj1np) | Downlink and uplink CSI traces for 276 sign words in the home environment. There are 2,760 instances of 276 sign gestures performed by one user. | 1.37GB |
 | [dataset_lab_276_dl.mat](https://wm1693.box.com/s/z9vsrn3998n4xyzkpqtj89yclk28eatp) | Downlink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 1.44GB |
 | [dataset_lab_276_ul.mat](https://wm1693.box.com/s/5hr4u7lsj10c329oibp8fjv95i524tnl) | Uplink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 1.33GB |
@@ -16,6 +15,7 @@ This repository contains the following files.
 | signfi_cnn_example.m | MATLAB source code for training and testing using the dataset. | 3KB |
 | training_screen_shot.png | A screen shot of the training process | 541KB |
 | sign_labels.csv | Labels for 276 sign words used in the measurement. | 2KB |
+| videos/ | This folder contains the videos for 276 basic sign words. These videos are used for the participant to learn and perform sign gestures during data collection. | 105.9MB |
 | README.md | Readme | 5KB |
 
 Both downlink and uplink CSI traces are included for the 276 sign words in the lab and home environments. Only downlink CSI traces are used in the paper. Please check the paper for more details about experiment setup, measurement procedure, WiFi settings, etc.
