@@ -23,12 +23,13 @@ Please check the paper for more details about experiment setup, measurement proc
 
 
 ### An Example
-The following shows an example of running `[net_info, perf] = signfi_cnn_example(csi,label)`.
+The following shows an example of how to train the dataset. Load the dataset `csid_lab` and `label_lab` into the Matlab workspace by running `load('dataset_lab_276_dl.mat');`. Run `[net_info, perf] = signfi_cnn_example(csid_lab,label_lab)`. This shows the training process in the following figure.
+![Training process](./training_screen_shot.png)
 
-1. Load the dataset and prepare for training.
+The following shows how `signfi_cnn_example` works.
+1. Prepare for training.
 ```Matlab
-load('dataset_lab_276_dl.mat');
-tic;
+tic; % starting time
 % prepare for training data
 csi_abs = abs(csi);
 csi_ang = angle(csi);
@@ -105,6 +106,3 @@ tpredict = dummyvar(double(YTest))';
 [c,cm,ind,per] = confusion(ttest,tpredict);
 plotconfusion(ttest,tpredict);
 ```
-
-The following figure shows an example of the training process.
-![Training process](./training_screen_shot.png)
