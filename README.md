@@ -1,8 +1,11 @@
 ## Sign Language Recognition using WiFi and Convolutional Neural Networks
+### [SignFiDataset_2018](https://app.box.com/folder/44872906260)
 
 This website contains the datasets of Channel State Information (CSI) traces for the following paper.
 
 [Yongsen Ma](http://www.cs.wm.edu/~yma/), [Gang Zhou](http://gzhou.blogs.wm.edu), Shuangquan Wang, Hongyang Zhao, and Woosub Jung. **SignFi: Sign Language Recognition using WiFi. ACM IMWUT (UbiComp '18)**.
+
+The datasets can be downloaded in the [SignFiDataset_2018 folder on Box](https://app.box.com/folder/44872906260). Both downlink and uplink CSI traces are included for the 276 sign words in the lab and home environments; Only downlink CSI traces are used in the paper.
 
 ### Files
 This repository contains the following files.
