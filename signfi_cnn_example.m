@@ -5,7 +5,7 @@
 % Sign Gesture Recognition using Convolutional Neural Networks
 
 function [net_info, perf] = signfi_cnn_example(csi,label)
-%     load('dataset_home_276.mat');
+%     load('dataset_home_276_dl.mat');
     tic;
 	% prepare for training data
     csi_abs = abs(csi);
