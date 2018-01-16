@@ -17,7 +17,7 @@ This repository contains the following files.
 | signfi_cnn_example.m | MATLAB source code for training and testing using the dataset. | 3KB |
 | training_screen_shot.png | A screen shot of the training process | 541KB |
 | sign_labels.csv | Labels for 276 sign words used in the measurement. | 2KB |
-| README.md | Readme | 490bytes |
+| README.md | Readme | 5KB |
 
 Please check the paper for more details about experiment setup, measurement procedure, WiFi settings, etc.
 
