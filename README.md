@@ -1,5 +1,5 @@
 ## Sign Language Recognition using WiFi and Convolutional Neural Networks
-### [SignFiDataset_2018](https://app.box.com/folder/44872906260)
+### [SignFiDataset_2018 on Box](https://app.box.com/folder/44872906260) or [SignFi on Github](https://github.com/yongsen/SignFi)
 
 This website contains the datasets of Channel State Information (CSI) traces for the following paper.
 
