@@ -1,4 +1,4 @@
-This website contains the datasets of Channel State Information (CSI) traces for the following paper.
+This website contains datasets of Channel State Information (CSI) traces for the following paper.
 
 [Yongsen Ma](http://www.cs.wm.edu/~yma/), [Gang Zhou](http://gzhou.blogs.wm.edu), Shuangquan Wang, Hongyang Zhao, and Woosub Jung. **SignFi: Sign Language Recognition using WiFi. ACM IMWUT (UbiComp '18)**.
 
