@@ -26,7 +26,7 @@ Please check the paper for more details about experiment setup, measurement proc
 
 
 ### An Example
-The following shows an example of how to train the dataset. Load the dataset `csid_lab` and `label_lab` into the Matlab workspace by running `load('dataset_lab_276_dl.mat');`. Run `[net_info, perf] = signfi_cnn_example(csid_lab,label_lab)`. This shows the training process in the following figure.
+The following shows an example of how to train the dataset. Load the dataset `csid_lab` and `label_lab` into the Matlab workspace by running `load('dataset_lab_276_dl.mat');`. Run `[net_info, perf] = signfi_cnn_example(csid_lab,label_lab);`. This shows the training process in the following figure.
 ![Training process](./training_screen_shot.png)
 
 The following shows how `signfi_cnn_example` works.
