@@ -9,14 +9,14 @@ This repository contains the following files.
 
 | Files | Description | Size |
 | ----- | ----------- | ---- |
-| videos/ | This folder contains the videos for 276 basic sign words. These videos are used for the participant to learn and perform sign gestures during data collection. | 105.9 MB |
-|dataset_home_276.mat | Downlink and uplink CSI traces for 276 sign words in the home environment. There are 2,760 instances of 276 sign gestures performed by one user. | 1.37 GB |
-|dataset_lab_276.mat | Downlink and uplink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 2.77 GB |
-|dataset_lab_150.mat | Downlink CSI traces for 150 sign words in the lab environment. There are 7,500 instances of 150 sign gestures performed by five users. | 3.56 GB |
-| signfi_cnn_example.m | MATLAB source code for training and testing using the dataset. | 3 KB |
-| training_screen_shot.png | A screen shot of the training process | 541 KB |
-| sign_labels.csv | Labels for 276 sign words used in the measurement. | 2 KB |
-| README.md | Readme | 490 bytes |
+| videos/ | This folder contains the videos for 276 basic sign words. These videos are used for the participant to learn and perform sign gestures during data collection. | 105.9MB |
+|dataset_home_276.mat | Downlink and uplink CSI traces for 276 sign words in the home environment. There are 2,760 instances of 276 sign gestures performed by one user. | 1.37GB |
+|dataset_lab_276.mat | Downlink and uplink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 2.77GB |
+|dataset_lab_150.mat | Downlink CSI traces for 150 sign words in the lab environment. There are 7,500 instances of 150 sign gestures performed by five users. | 3.56GB |
+| signfi_cnn_example.m | MATLAB source code for training and testing using the dataset. | 3KB |
+| training_screen_shot.png | A screen shot of the training process | 541KB |
+| sign_labels.csv | Labels for 276 sign words used in the measurement. | 2KB |
+| README.md | Readme | 490bytes |
 
 Please check the paper for more details about experiment setup, measurement procedure, WiFi settings, etc.
 
@@ -72,7 +72,6 @@ layers = [imageInputLayer([M N S]);
           fullyConnectedLayer(Nw);
           softmaxLayer();
           classificationLayer()];
-
 % training options for the Convolutional Neural Network
 options = trainingOptions('sgdm','ExecutionEnvironment','parallel',...
                           'MaxEpochs',n_epoch,...
@@ -89,12 +88,10 @@ options = trainingOptions('sgdm','ExecutionEnvironment','parallel',...
 ```Matlab
 [trainedNet,tr{k,1}] = trainNetwork(trainCsi,trainWord,layers,options);
 t1 = toc; % training end time
-
 [YTest, scores] = classify(trainedNet,testCsi);
 TTest = testWord;
 test_accuracy = sum(YTest == TTest)/numel(TTest);
 t2 = toc; % testing end time
-
 net_info = tr;
 perf = test_accuracy;
 ```
