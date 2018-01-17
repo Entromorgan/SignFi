@@ -26,7 +26,7 @@ The following shows an example of how to train the dataset. Load the dataset `cs
 ![Training process](./training_screen_shot.png)
 
 The following shows how `signfi_cnn_example` works.
-1. Prepare for training.
+1. Prepare data for training.
 ```matlab
 tic; % starting time
 % prepare for training data
@@ -64,7 +64,7 @@ valData = {testCsi,testWord};
 
 4. Set neural network layers and options.
 ```matlab
-% Convolutional Neural Network settings
+% Network settings
 layers = [imageInputLayer([M N S]);
           convolution2dLayer(4,4,'Padding',0);
           batchNormalizationLayer();
@@ -73,7 +73,7 @@ layers = [imageInputLayer([M N S]);
           fullyConnectedLayer(Nw);
           softmaxLayer();
           classificationLayer()];
-% training options for the Convolutional Neural Network
+% Training options
 options = trainingOptions('sgdm','ExecutionEnvironment','parallel',...
                           'MaxEpochs',n_epoch,...
                           'InitialLearnRate',learn_rate,...
@@ -85,7 +85,7 @@ options = trainingOptions('sgdm','ExecutionEnvironment','parallel',...
                           'Verbose',false,...
                           'Plots','training-progress');
 ```
-5. Train the neural network and calculate recognition accuracy.
+5. Train and test the neural network; calculate recognition accuracy.
 ```matlab
 [trainedNet,tr{k,1}] = trainNetwork(trainCsi,trainWord,layers,options);
 t1 = toc; % training end time
@@ -110,6 +110,7 @@ plotconfusion(ttest,tpredict);
 
 You need to read and agree to the following terms of use to download and use the SignFi dataset.
 
+```
 1. Definitions
 
 The following terms, unless the context requires otherwise, have the following meanings:
@@ -133,3 +134,4 @@ The College of William and Mary provides the SignFi Dataset "AS IS," without any
 THE COLLLEGE OF WILLIAM AND MARY MAKES NO WARRANTIES, EXPRESS OR IMPLIED WITH RESPECT TO THE SIGNFI DATASET, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, WHICH ARE HEREBY EXPRESSLY DISCLAIMED.
 
 Your acceptance and use of the SignFi Dataset binds you to the terms and conditions of this License as stated herein.
+```
