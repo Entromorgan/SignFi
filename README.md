@@ -1,9 +1,9 @@
 This website contains datasets of Channel State Information (CSI) traces for sign language recognition using WiFi.
 
-### Cite the Paper
+## Cite the Paper
 Yongsen Ma, Gang Zhou, Shuangquan Wang, Hongyang Zhao, and Woosub Jung. SignFi: Sign Language Recognition using WiFi. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (ACM IMWUT) (ACM UbiComp ’18).
 
-### Files
+## Files
 This repository contains the following files. You agree to the [Terms of Use for SignFi Dataset](#terms-of-use-for-signfi-dataset) to download and use the files.
 
 | Files | Description | Size |
@@ -21,7 +21,7 @@ This repository contains the following files. You agree to the [Terms of Use for
 Both downlink and uplink CSI traces are included for the 276 sign words in the lab and home environments. Only downlink CSI traces are used in the paper. Please check the paper for more details about experiment setup, measurement procedure, WiFi settings, etc.
 
 
-### An Example
+## An Example
 The following shows an example of how to train the dataset. Load the dataset `csid_lab` and `label_lab` into the Matlab workspace by running `load('dataset_lab_276_dl.mat');`. Run `[net_info, perf] = signfi_cnn_example(csid_lab,label_lab);`. This shows the training process in the following figure.
 ![Training process](./training_screen_shot.png)
 
@@ -106,7 +106,7 @@ tpredict = dummyvar(double(YTest))';
 plotconfusion(ttest,tpredict);
 ```
 
-### Terms of Use for SignFi Dataset
+## Terms of Use for SignFi Dataset
 
 You need to read and agree to the following terms of use to download and use the SignFi dataset.
 
