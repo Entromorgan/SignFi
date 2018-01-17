@@ -110,7 +110,7 @@ plotconfusion(ttest,tpredict);
 
 You need to read and agree to the following terms of use to download and use the SignFi dataset.
 
-~~~~
+```
 1. Definitions
 
 The following terms, unless the context requires otherwise, have the following meanings:
@@ -134,4 +134,4 @@ The College of William and Mary provides the SignFi Dataset "AS IS," without any
 THE COLLLEGE OF WILLIAM AND MARY MAKES NO WARRANTIES, EXPRESS OR IMPLIED WITH RESPECT TO THE SIGNFI DATASET, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, WHICH ARE HEREBY EXPRESSLY DISCLAIMED.
 
 Your acceptance and use of the SignFi Dataset binds you to the terms and conditions of this License as stated herein.
-~~~~
+```
