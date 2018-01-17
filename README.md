@@ -27,7 +27,7 @@ The following shows an example of how to train the dataset. Load the dataset `cs
 
 The following shows how `signfi_cnn_example` works.
 1. Prepare for training.
-```Matlab
+```matlab
 tic; % starting time
 % prepare for training data
 csi_abs = abs(csi);
@@ -39,7 +39,7 @@ t0 = toc; % pre-processing time
 `tic` and `toc` are used to measure time consumption. The size of `csid_lab` is `size(csid_lab)=(200,30,3,5520)`. `csi_tensor` and `word` are the CSI input and labels for training.
 
 2. Some parameter settings.
-```Matlab
+```matlab
 [M,N,S,T] = size(csi_tensor);
 Nw = 276; % number of classes
 rng(42); % For reproducibility
@@ -49,7 +49,7 @@ l2_factor = 0.01;
 ```
 
 3. Divide the dataset into training and testing subsets.
-```Matlab
+```matlab
 K = 5;
 cv = cvpartition(T,'kfold',K); % 20% for testing
 k = 1; % for k=1:K
@@ -63,7 +63,7 @@ valData = {testCsi,testWord};
 ```
 
 4. Set neural network layers and options.
-```Matlab
+```matlab
 % Convolutional Neural Network settings
 layers = [imageInputLayer([M N S]);
           convolution2dLayer(4,4,'Padding',0);
@@ -86,7 +86,7 @@ options = trainingOptions('sgdm','ExecutionEnvironment','parallel',...
                           'Plots','training-progress');
 ```
 5. Train the neural network and calculate recognition accuracy.
-```Matlab
+```matlab
 [trainedNet,tr{k,1}] = trainNetwork(trainCsi,trainWord,layers,options);
 t1 = toc; % training end time
 [YTest, scores] = classify(trainedNet,testCsi);
@@ -98,7 +98,7 @@ perf = test_accuracy;
 ```
 
 6. Plot the confusion matrix. Since there are too many classes, it is not reasonable to plot the whole confusion matrix. You can divide the classes into different categories and then plot the confusion matrix.
-```Matlab
+```matlab
 % plot confusion matrix
 ttest = dummyvar(double(TTest))';
 tpredict = dummyvar(double(YTest))';
