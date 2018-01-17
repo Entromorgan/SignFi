@@ -2,6 +2,8 @@ This website contains datasets of Channel State Information (CSI) traces for the
 
 [Yongsen Ma](http://www.cs.wm.edu/~yma/), [Gang Zhou](http://gzhou.blogs.wm.edu), Shuangquan Wang, Hongyang Zhao, and Woosub Jung. **SignFi: Sign Language Recognition using WiFi. ACM IMWUT (UbiComp '18)**.
 
+### Cite the Paper
+Yongsen Ma, Gang Zhou, Shuangquan Wang, Hongyang Zhao, and Woosub Jung. SignFi: Sign Language Recognition using WiFi. In Proceedings of the 2018 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp ’18).
 
 ### Files
 This repository contains the following files.
