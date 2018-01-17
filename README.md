@@ -110,7 +110,7 @@ plotconfusion(ttest,tpredict);
 
 You need to read and agree to the following terms of use to download and use the SignFi dataset.
 
->1. Definitions
+>`1.` Definitions
 >
 >The following terms, unless the context requires otherwise, have the following meanings:
 >
@@ -119,9 +119,9 @@ You need to read and agree to the following terms of use to download and use the
 >“SignFi Dataset”: means the channel state information traces collected by the Data Team;
 >
 >“Licensee”, “You”, “Your”, “Yours”: means the person or entity acquiring a license hereunder for access to and use of the SignFi Dataset.
+
 >
->
->2. Grant of License
+>`2.` Grant of License
 >
 >The College of William and Mary hereby grants to You a non-exclusive, non-transferable, revocable license to use the SignFi Dataset solely for Your non-commercial, educational, and research purposes only, but without any right to copy or reproduce, publish or otherwise make available to the public or communicate to the public, sell, rent or lend the whole or any constituent part of the SignFi Dataset thereof. The SignFi Dataset shall not be redistributed without the express written prior approval of the College of William and Mary You agree to respect the privacy of those human subjects whose sign gesture data are included in the SignFi Dataset. Do not attempt to reverse the anonymization process to identify specific identifiers including, without limitation, names, postal address information, telephone numbers, e-mail addresses, social security numbers, and biometric identifiers. You agree not to reverse engineer, separate or otherwise tamper with the SignFi Dataset so that data can be extracted and used outside the scope of that permitted in this Agreement.
 >
