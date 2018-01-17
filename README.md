@@ -29,7 +29,6 @@ The following shows how `signfi_cnn_example` works.
 1. Prepare data for training.
 ```matlab
 tic; % starting time
-% prepare for training data
 csi_abs = abs(csi);
 csi_ang = angle(csi);
 csi_tensor = [csi_abs,csi_ang];
@@ -62,7 +61,7 @@ testWord = word(testIdx,1);
 valData = {testCsi,testWord};
 ```
 
-4. Set neural network layers and options.
+4. Set neural network layers and training options.
 ```matlab
 % Network settings
 layers = [imageInputLayer([M N S]);
