@@ -61,7 +61,7 @@ testWord = word(testIdx,1);
 valData = {testCsi,testWord};
 ```
 
-4. Set neural network layers and training options.
+4. Set neural network layers and training options. MATLAB 2017b or newer versions are needed to use `batchNormalizationLayer()` for network layers and `ValidationData` for training options.
 ```matlab
 % Network settings
 layers = [imageInputLayer([M N S]);
