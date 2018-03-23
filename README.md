@@ -5,6 +5,7 @@ Yongsen Ma, Gang Zhou, Shuangquan Wang, Hongyang Zhao, and Woosub Jung. SignFi: 
 
 ## Overview
 A comparision of sign language recognition technologies is shown in the following figure.
+
 ![Sign Language Recognition Comparison](./SignLanguageRecognition.png)
 
 ## Files
