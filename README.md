@@ -3,6 +3,10 @@ This website contains datasets of Channel State Information (CSI) traces for sig
 ## Cite the Paper
 Yongsen Ma, Gang Zhou, Shuangquan Wang, Hongyang Zhao, and Woosub Jung. SignFi: Sign Language Recognition using WiFi. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (ACM IMWUT) (ACM UbiComp ’18).
 
+## Overview
+A comparision of sign language recognition technologies is shown in the following figure.
+![Sign Language Recognition Comparison](./SignLanguageRecognition.png)
+
 ## Files
 This repository contains the following files. You agree to the [Terms of Use for SignFi Dataset](#terms-of-use-for-signfi-dataset) to download and use the files.
 
