@@ -34,8 +34,8 @@ The following shows how `signfi_cnn_example` works.
 1. Prepare data for training.
 ```matlab
 tic; % starting time
-csi_abs = abs(csi);
-csi_ang = angle(csi);
+csi_abs = abs(csi); % CSI amplitude
+csi_ang = angle(csi); % CSI phase
 csi_tensor = [csi_abs,csi_ang];
 word = categorical(label);
 t0 = toc; % pre-processing time
@@ -44,6 +44,8 @@ t0 = toc; % pre-processing time
 
 2. Some parameter settings.
 ```matlab
+% [M,N,S] CSI matrix for each instance
+% T is the total number of instances
 [M,N,S,T] = size(csi_tensor);
 Nw = 276; % number of classes
 rng(42); % For reproducibility
