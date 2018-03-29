@@ -44,8 +44,8 @@ t0 = toc; % pre-processing time
 
 2. Some parameter settings.
 ```matlab
-% [M,N,S] CSI matrix for each instance
-% T is the total number of instances
+% [M,N,S]: CSI matrix for each instance
+% T: the total number of instances
 [M,N,S,T] = size(csi_tensor);
 Nw = 276; % number of classes
 rng(42); % For reproducibility
