@@ -11,10 +11,12 @@ function [net_info, perf] = signfi_cnn_example(csi,label)
     csi_abs = abs(csi);
     csi_ang = angle(csi);
 %     csi_ang = get_signfi_phase(csi);
-	csi_tensor = [csi_abs,csi_ang];
+    csi_tensor = [csi_abs,csi_ang];
     word = categorical(label);
     t0 = toc; % pre-processing time
     
+    % [M,N,S]: CSI matrix for each instance
+    % T: the total number of instances
     [M,N,S,T] = size(csi_tensor);
     Nw = 276; % number of classes
     
