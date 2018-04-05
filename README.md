@@ -13,10 +13,10 @@ This repository contains the following files. You agree to the [Terms of Use for
 
 | Files | Description | Size |
 | ----- | ----------- | ---- |
-| [dataset_home_276.mat](https://wm1693.box.com/s/mmikgi9ubkg7vnwaztplnxudh8sgj1np) | Downlink and uplink CSI traces for 276 sign words in the home environment. There are 2,760 instances of 276 sign gestures performed by one user. | 1.37GB |
-| [dataset_lab_276_dl.mat](https://wm1693.box.com/s/z9vsrn3998n4xyzkpqtj89yclk28eatp) | Downlink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 1.44GB |
-| [dataset_lab_276_ul.mat](https://wm1693.box.com/s/5hr4u7lsj10c329oibp8fjv95i524tnl) | Uplink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 1.33GB |
-| [dataset_lab_150.mat](https://wm1693.box.com/s/kidoq54rv93ysojgzv7xjqixyzwir7lq) | Downlink CSI traces for 150 sign words in the lab environment. There are 7,500 instances of 150 sign gestures performed by five users. | 1.93GB |
+| [dataset_home_276.mat](https://wm1693.box.com/s/mmikgi9ubkg7vnwaztplnxudh8sgj1np) | Segmented downlink and uplink CSI traces for 276 sign words in the home environment. There are 2,760 instances of 276 sign gestures performed by one user. | 1.37GB |
+| [dataset_lab_276_dl.mat](https://wm1693.box.com/s/z9vsrn3998n4xyzkpqtj89yclk28eatp) | Segmented downlink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 1.44GB |
+| [dataset_lab_276_ul.mat](https://wm1693.box.com/s/5hr4u7lsj10c329oibp8fjv95i524tnl) | Segmented uplink CSI traces for 276 sign words in the lab environment. There are 5,520 instances of 276 sign gestures performed by one user.| 1.33GB |
+| [dataset_lab_150.mat](https://wm1693.box.com/s/kidoq54rv93ysojgzv7xjqixyzwir7lq) | Segmented downlink CSI traces for 150 sign words in the lab environment. There are 7,500 instances of 150 sign gestures performed by five users. | 1.93GB |
 | [signfi_cnn_example.m](https://wm1693.box.com/s/pvlrxb7cxexgfquyt1dqn52a49kz90db) | MATLAB source code for training and testing using the dataset. | 3KB |
 | [training_screen_shot.png](https://wm1693.box.com/s/4vkpfzet9cctpya8pcjorq646adomboe) | A screen shot of the training process | 541KB |
 | [sign_labels.csv](https://wm1693.box.com/s/wu3bvgbuzbypfvsq716qqgynpw8qriiy) | Labels for 276 sign words used in the measurement. | 2KB |
@@ -68,9 +68,9 @@ testWord = word(testIdx,1);
 valData = {testCsi,testWord};
 ```
 
-4. Set neural network layers and training options. MATLAB 2017b or newer versions are needed to use `batchNormalizationLayer()` for network layers and `ValidationData` for training options.
+4. Set neural network layers and training options. MATLAB 2017b or newer versions are needed to use `batchNormalizationLayer()` for network layers and `ValidationData` for training options. For `trainingOptions`, `ExecutionEnvironmnet` can be `cpu`, `gpu`, or `parallel`.
 ```matlab
-% Network settings
+% Neural network layer settings
 layers = [imageInputLayer([M N S]);
           convolution2dLayer(4,4,'Padding',0);
           batchNormalizationLayer();
@@ -79,7 +79,7 @@ layers = [imageInputLayer([M N S]);
           fullyConnectedLayer(Nw);
           softmaxLayer();
           classificationLayer()];
-% Training options
+% Neural network training options
 options = trainingOptions('sgdm','ExecutionEnvironment','parallel',...
                           'MaxEpochs',n_epoch,...
                           'InitialLearnRate',learn_rate,...
