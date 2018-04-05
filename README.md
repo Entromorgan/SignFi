@@ -40,7 +40,7 @@ csi_tensor = [csi_abs,csi_ang];
 word = categorical(label);
 t0 = toc; % pre-processing time
 ```
-`tic` and `toc` are used to measure time consumption. The size of `csid_lab` is `size(csid_lab)=(200,30,3,5520)`. `csi_tensor` and `word` are the CSI input and labels for training.
+`tic` and `toc` are used to measure time consumption. The size of `csid_lab` is `size(csid_lab)=(200,30,3,5520)`. `csi_tensor` and `word` are the CSI input and labels.
 
 2. Some parameter settings.
 ```matlab
@@ -68,7 +68,7 @@ testWord = word(testIdx,1);
 valData = {testCsi,testWord};
 ```
 
-4. Set neural network layers and training options. MATLAB 2017b or newer versions are needed to use `batchNormalizationLayer()` for network layers and `ValidationData` for training options. For `trainingOptions`, `ExecutionEnvironmnet` can be `cpu`, `gpu`, or `parallel`.
+4. Set neural network layers and training options. MATLAB 2017b or newer versions are needed to use `batchNormalizationLayer()` for network layers and `ValidationData` for training options. For `trainingOptions`, `ExecutionEnvironmnet` can be `'cpu'`, `'gpu'`, or `'parallel'`.
 ```matlab
 % Neural network layer settings
 layers = [imageInputLayer([M N S]);
