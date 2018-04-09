@@ -27,7 +27,7 @@ Both downlink and uplink CSI traces are included for the 276 sign words in the l
 
 
 ## An Example
-The following shows an example of how to train the dataset. Load the dataset `csid_lab` and `label_lab` into the Matlab workspace by running `load('dataset_lab_276_dl.mat');`. Run `[net_info, perf] = signfi_cnn_example(csid_lab,label_lab);`. This shows the training process in the following figure.
+The following shows an example of how to train the dataset. Load the dataset `csid_lab` and `label_lab` into the Matlab workspace by running `load('dataset_lab_276_dl.mat');`. Run `[net_info, perf] = signfi_cnn_example(csid_lab,label_lab);` to train the neural network and get recognition results. This shows the training process in the following figure.
 ![Training process](./training_screen_shot.png)
 
 The following shows how `signfi_cnn_example` works.
