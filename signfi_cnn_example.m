@@ -1,8 +1,11 @@
 %% Yongsen Ma <yma@cs.wm.edu>
-% Computer Science Department, College of William and Mary
+% Computer Science Department, The College of William & Mary
 %
-% This is an example for 
-% Sign Gesture Recognition using Convolutional Neural Networks
+% This is an example for the following paper
+% Yongsen Ma, Gang Zhou, Shuangquan Wang, Hongyang Zhao, and Woosub Jung. 2018.
+% SignFi: Sign Language Recognition Using WiFi.
+% Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 2, 1, Article 23 (March 2018), 21 pages.
+% DOI: https://doi.org/10.1145/3191755
 
 function [net_info, perf] = signfi_cnn_example(csi,label)
     % load('dataset_lab_276_dl.mat'); % load CSI and labels into workspace
